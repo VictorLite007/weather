@@ -13,7 +13,7 @@ const year = date.getFullYear()
 
 
 document.querySelector('.btn').addEventListener('click', () => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${document.querySelector('.city_name').value},ukt&appid=2593974dc29f26ca9157642339010606`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${document.querySelector('.city_name').value},ukt&appid=2593974dc29f26ca9157642339010606`
 
     fetch(url)
         .then(function (resp) { return resp.json() })
